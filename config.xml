@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://samsung.com/MessagePort" version="2.0.0" viewmodes="maximized">
+    <tizen:application id="sample0010.MessagePort" package="sample0010" required_version="2.4" />
+    <content src="index.html" />
+    <feature name="http://tizen.org/feature/screen.size.all" />
+    <icon src="icon.png" />
+    <name>MessagePort</name>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice" />
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo" />
+    <tizen:privilege name="http://tizen.org/privilege/application.launch" />
+    <tizen:privilege name="http://tizen.org/privilege/appmanager.kill" />
+    <tizen:profile name="tv-samsung" />
+    <tizen:setting background-support="enable" />
+    <tizen:service id="SampleBgSv.MsgBGSvc">
+        <tizen:content src="js/backgroundService/backgroundService.js" />
+        <tizen:name>MsgBGSvc</tizen:name>
+        <tizen:description>Service Application</tizen:description>
+        <tizen:metadata key="meta-key" value="meta-value" />
+        <tizen:category name="http://tizen.org/category/service" />
+    </tizen:service>
+</widget>

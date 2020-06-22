@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>MessagePort</title>
+    <script src="$WEBAPIS/webapis/webapis.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="appName">MessagePort</h1>
+        <h2 class="appVersion">2.0.0</h2>
+        <div class="tvInfo">
+            <p class="firmware"></p>
+            <p class="model"></p>
+        </div>
+    </header>
+    <section class="main">
+        <section id="info-container">
+            <h1>Received confirmations:</h1>
+            <div class="status"></div>
+        </section>
+
+    </section>
+    <section class="logs">
+        <h2>Logs:</h2>
+        <div data-list-item class="logsContainer">
+
+        </div>
+    </section>
+    <section class="info">
+        <section class="info-container">
+            <h2>Info</h2>
+
+            <p>This application (caller) can send a message to background service (callee) using a messagePort.</p>
+            <p>Background service will reply to every message with its own message and this message will be displayed.</p>
+            <p>Use buttons on the bottom to send messages to background service.</p>
+
+        </section>
+    </section>
+    <section class="buttons" id="buttons">
+        <button data-list-item class="send send-a">Send simple message</button>
+        <button data-list-item class="send send-b">Send complex message</button>
+        <button data-list-item class="clear-status">Clear</button>
+
+        <button data-list-item class="toggle-info">Show/hide info</button>
+    </section>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/keyhandler.js"></script>
+    <script src="./js/logger.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/init.js"></script>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
